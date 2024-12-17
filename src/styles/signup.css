@@ -1,0 +1,106 @@
+/* Outer Container for Fullscreen Layout */
+.signup-page-container {
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../images/pexels-unknown6user-1657332.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Centered Form */
+  .signup-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:85%;
+    max-width: 400px;
+  }
+  
+  /* PlayPal Logo and Name */
+  .playpal-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .playpal-logo-icon {
+    font-size: 2rem;
+    color: #1f7bb9 !important; /* Blue color */
+    margin-right: 10px;
+  }
+
+  Link{
+    text-decoration: none;
+  }
+  
+  .playpal-logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f7bb9; /* Blue color */
+  }
+  
+  /* Signup Title */
+  .signup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b1f3b;
+    margin-bottom: 20px;
+  }
+  
+  .signup-input {
+    margin-bottom: 20px;
+  }
+  
+  .signup-button {
+    margin-top: 20px !important;
+    background-color: #1f7bb9 !important;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: none;
+    transition: all 0.3s ease;
+    height: 50px !important;
+  }
+  
+  .signup-button:hover {
+    background-color: #b91f1f !important;
+    transform: scale(1.05);
+  }
+
+  
+  .signup-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .signup-link {
+    color: #1f7bb9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  .role-selection-title {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .role-selection-group {
+    justify-content: center;
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,152 @@
+/* General Container */
+.store-container {
+    font-family: "Arial", sans-serif;
+    /* background: linear-gradient(120deg, #1b1f3b, #dd524d); */
+    background-image: url('../../images/pexels-unknown6user-1657332.jpg'); /* Add a sports-related image URL */
+    color: #ffffff;
+    min-height: 100vh;
+    /* padding: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+.store-content {   
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80% !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .store-content:hover{
+    transform: translateY(-5px) scale(1.0);
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+  /* Store Title */
+  .store-title {
+    margin-bottom: 20px;
+    color: #b91f1f;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5);
+  }
+  .store-title:hover {
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 69, 0, 1);
+}
+  /* Product Card */
+  .product-card {
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Product Title */
+  .product-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+ /* Cart Container */
+.cart-container {
+  position: fixed;
+  top: 130px;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+
+  
+  /* Cart Item */
+  .cart-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Cart Button */
+  .cart-item .MuiButton-outlined {
+    margin-right: 5px;
+  }
+  
+  /* Product Cards */
+  .product-card {
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  /* Hover Effects */
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Total Price */
+  .total-price {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .str-btn {
+    background: #166cdd !important;
+   
+  } 
+  
+  .str-btn:hover {
+    background: #0ac969 !important;
+    transform: translateY(-2px) scale(1.01);
+  }
+
+  
+  .btn-rem:hover {
+    background: #bb1d01;
+    translate: scale(1.05);
+  }
+  
+/* Adjustments for small screens */
+@media (max-width: 600px) {
+  .cart-container {
+    width: 90%; /* Reduce width for small screens */
+    max-width: none; /* Remove max width constraint */
+    left: 5%; /* Center horizontally */
+    top: 80px; /* Adjust top position for better view */
+  }
+
+  .total-price {
+    font-size: 1rem; /* Adjust text size for small screens */
+  }
+
+  .str-btn {
+    font-size: 0.9rem; /* Adjust button size */
+  }
+
+  .store-content{
+    width: 80% !important;
+    margin-left: 40px !important;
+  }
+
+  .store-container .product-card{
+    margin-left: 18%;
+  }
+}

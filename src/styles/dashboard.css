@@ -1,0 +1,163 @@
+/* General Styles */
+.dashboard-container {
+    font-family: "Arial", sans-serif;
+   /* background: linear-gradient(120deg, #1b1f3b, #dd524d); /* Vibrant gradient background */
+   background-image: url('../../images/pexels-unknown6user-1657332.jpg');
+    color: #ffffff; /* Ensure text is visible on the dark background */
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  /* Animated Glow Overlay */
+  .dashboard-container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 69, 0, 0.3), rgba(27, 31, 59, 0));
+    animation: pulseGlow 6s infinite;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+  }
+  
+  /* Main Content Layout */
+  .dashboard-content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    z-index: 1; /* Place content above overlay */
+  }
+  
+  /* Section Styles */
+  .dashboard-section {
+    flex: 1 1 45%; /* Adjust width for two columns */
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Light gradient */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15), 0px 4px 10px rgba(255, 69, 0, 0.1); /* Dual-layer shadows */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    color: #1b1f3b; /* Dark navy for strong readability */
+  }
+  
+  .dashboard-section:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(145deg, #ffe4d9, #ffdcc2); /* Dynamic hover gradient */
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+  
+  /* Section Titles */
+  .dashboard-section h2 {
+    color: #ff4500; /* Highlighted orange for titles */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5); /* Subtle glow */
+  }
+  
+  /* Notifications List */
+  .notifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notifications ul li {
+    margin: 10px 0;
+    padding: 15px;
+    background: linear-gradient(120deg, #ffdcc2, #ffe4d9); /* Soft gradient for list items */
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.3s ease;
+    color: #1b1f3b; /* Ensure dark text is readable */
+  }
+  
+  .notifications ul li:hover {
+    transform: translateX(10px) scale(1.02); /* Slight movement and zoom */
+    background: linear-gradient(120deg, #e04f4f, #ff8e66); /* Bold hover gradient */
+    box-shadow: 0px 5px 15px rgba(255, 69, 0, 0.4); /* Vibrant glow */
+    color: #ffffff; /* Switch to white text for hover state */
+  }
+  
+  /* Table Styles */
+  .upcoming-matches table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: linear-gradient(120deg, #ffffff, #f7f7f7);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .upcoming-matches table th,
+  .upcoming-matches table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+    color: #1b1f3b; /* Dark navy for table content */
+  }
+  
+  .upcoming-matches table th {
+    background: linear-gradient(145deg, #c24242, #2a2f52);
+    color: #ffffff; /* Ensure white text for headers */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .upcoming-matches table tr:nth-child(even) {
+    background: #f9f9fc;
+  }
+  
+  .upcoming-matches table tr:hover {
+    background: linear-gradient(120deg, #ffdcc2, #ffe4d9); /* Hover row gradient */
+    color: #1b1f3b; /* Maintain dark navy text for readability */
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  /* Add Animation for Entry */
+  .dashboard-section,
+  .notifications ul li,
+  .upcoming-matches table tr {
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,74 @@
+/* Outer Container for Fullscreen Layout */
+.captain-page-container {
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../images/pexels-unknown6user-1657332.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+/* Container for the Captain Form */
+.captain-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:85%;
+    max-width: 400px;
+  }
+
+/* PlayPal Logo Section */
+.playpal-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.playpal-logo-icon {
+    font-size: 2rem;
+    color: #1f7bb9 !important; /* Blue color */
+    margin-right: 10px;
+}
+
+.playpal-logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f7bb9; /* Blue color */
+}
+
+/* Form Title */
+.captain-form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1b1f3b;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.captain-form-input {
+    margin-bottom: 20px;
+}
+
+/* Submit Button */
+.captain-form-button {
+    margin-top: 20px;
+    background-color: #1f7bb9 !important;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: none;
+    transition: all 0.3s ease;
+    height: 50px;
+}
+
+.captain-form-button:hover {
+    background-color: #b91f1f !important;
+    transform: scale(1.05);
+}

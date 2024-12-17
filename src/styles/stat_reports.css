@@ -1,0 +1,115 @@
+/* General container styling */
+.statistics-container {
+  font-family: "Arial", sans-serif;
+  /* background: linear-gradient(120deg, #1b1f3b, #dd524d); */
+  background-image: url('../../images/pexels-unknown6user-1657332.jpg'); /* Add a sports-related image URL */
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+  /* Typography */
+  .stat-title {
+    margin-bottom: 20px;
+    color: #b91f1f;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5);
+  }
+  .stat-title:hover {
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 69, 0, 1);
+}
+  /* Content Layout */
+  .statistics-container1 {
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .statistics-container1:hover{
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+  /* Filters card */
+  .MuiCard-root {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  
+  /* Filter labels and fields */
+  .MuiInputLabel-root {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .MuiSelect-select {
+    padding: 10px 12px;
+  }
+  
+  button.MuiButton-containedPrimary {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  button.MuiButton-containedPrimary:hover {
+    background-color: #43a047;
+  }
+  
+  /* Charts section */
+  .statistics-container .MuiCard-root {
+    margin-bottom: 20px;
+  }
+  
+  .statistics-container .MuiCardContent-root {
+    padding: 24px;
+  }
+  
+  /* Alert styling */
+  .MuiAlert-root {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  /* Responsive grid styling */
+  @media (max-width: 768px) {
+    .statistics-container {
+      padding: 10px;
+    }
+  
+    .statistics-container .MuiCard-root {
+      margin-bottom: 15px;
+    }
+  
+    button.MuiButton-containedPrimary,
+    button.MuiButton-outlinedSecondary {
+      font-size: 14px;
+    }
+
+    .statistics-container1{
+      margin-left: -35px;
+    }
+  }
+  
+  /* Chart-specific styles */
+  .recharts-tooltip-wrapper {
+    font-size: 12px;
+  }
+  
+  .recharts-default-legend {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

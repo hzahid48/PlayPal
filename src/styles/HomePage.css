@@ -1,0 +1,157 @@
+.home-page {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9; /* Light gray for better contrast with sections */
+    color: #1b1f3b; /* Deep navy for consistency with the navbar */
+    
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../../images/pexels-unknown6user-1657332.jpg'); /* Add a sports-related image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Keeps the focus on the center of the image */
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    position: relative; /* Required for overlay */
+    overflow: hidden; /* Hides any extra elements */
+    
+}
+
+/* Add a dynamic glowing overlay */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(
+        75deg, 
+        rgba(255, 69, 0, 0.3), 
+        rgba(27, 31, 59, 0.7)
+    );
+    transform: rotate(25deg);
+    animation: move-overlay 6s infinite linear;
+    z-index: 1; /* Ensures overlay is above the background */
+}
+
+@keyframes move-overlay {
+    0% { transform: translateX(-50%) rotate(25deg); }
+    100% { transform: translateX(50%) rotate(25deg); }
+}
+
+.hero-title, .hero-subtitle, .hero-button {
+    position: relative; /* Places text above the overlay */
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 69, 0, 0.7); /* Glow effect */
+    transition: text-shadow 0.5s ease;
+}
+
+.hero-title:hover {
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 69, 0, 1);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    opacity: 0.9;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.hero-subtitle:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.hero-button {
+    background-color: #1f7bb9 !important;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 5px 10px rgba(255, 69, 0, 0.5);
+}
+
+.hero-button:hover {
+    background-color: #b91f1f !important;
+    transform: translateY(-2px) scale(1.1); /* Pop-out effect */
+    box-shadow: 0px 8px 20px rgba(255, 69, 0, 0.8); /* Intense glow on hover */
+}
+
+/* Features Section */
+.features-section {
+    margin-top: 50px;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Soft light blue gradient for a calming effect */
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.section-title {
+    margin-bottom: 50px!important;
+    color: #1b1f3b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: color 0.5s ease, transform 0.4s ease;
+}
+
+.section-title:hover {
+    color: #ff4500;
+    transform: scale(1.1); /* Engaging hover effect */
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #f8f4f1, #c6d1e1); /* Warm beige to a soft grayish-blue gradient for more contrast */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    transition: transform 0.5s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* On Hover - Keeping the gradient but switching to a warmer, vibrant hue */
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.08); /* Slight lift and scaling */
+    box-shadow: 0px 8px 20px rgba(255, 69, 0, 0.5), 0px 12px 30px rgba(0, 0, 0, 0.3); /* Stronger glow and depth on hover */
+    background: linear-gradient(145deg, #ffe4d9, #f9f9fc); /* Soft orange gradient on hover */
+}
+
+
+
+.feature-title {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1b1f3b; /* Consistent navy */
+    font-size: 1.2rem;
+    transition: color 0.4s ease;
+}
+
+.feature-title:hover {
+    color: #ff4500; /* Highlight on hover */
+}
+
+.feature-description {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.feature-description:hover {
+    color: #1b1f3b;
+}

@@ -1,0 +1,186 @@
+/* matchScheduler.css */
+
+/* General Styles for Match Scheduler */
+.match-scheduler {
+    font-family: "Arial", sans-serif;
+    /* background: linear-gradient(120deg, #1b1f3b, #dd524d); */
+    background-image: url('../../images/pexels-unknown6user-1657332.jpg');
+    color: #ffffff;
+    padding: 20px;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  /* Content Layout */
+  .match-scheduler-container {
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    align-self: center;
+  }
+
+  .match-scheduler-container:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+
+.match-scheduler__header {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #b91f1f;;
+    border-bottom: 2px solid  #b91f1f;;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5); /* Subtle glow */
+}
+
+/* Match Scheduling Form */
+.match-scheduler__form {
+    background: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.match-scheduler__form:hover{
+    /* background: linear-gradient(120deg, #ffeee1, #f1ded7); Hover row gradient */
+    color: #1b1f3b; /* Maintain dark navy text for readability */
+    /* transform: translateY(-2px) scale(1.05); */
+    transition: all 0.3s ease;
+  }
+
+.match-scheduler__input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background: #f9f9f9;
+    color: #1b1f3b;
+}
+
+.match-scheduler__submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff4500; /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em !important;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.match-scheduler__submit-btn:hover {
+    background: #b91f1f;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Calendar View */
+.match-scheduler__calendar {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.match-scheduler__calendar-header {
+    font-size: 1.5rem;
+    color: #2a2f52; /* Deep blue text */
+    margin-bottom: 20px;
+}
+
+  /* Content Layout */
+  .match-scheduler-container {
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+
+.match-scheduler__match-entry {
+    background: #f9f9f9;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #2a2f52; /* Deep blue text */
+    font-size: 1rem;
+}
+
+.match-scheduler__match-entry:hover {
+    background: #ffe4d9;
+    cursor: pointer;
+}
+
+.match-scheduler__no-matches {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Notification Button */
+.match-scheduler__notification-btn {
+    padding: 10px 20px;
+    background: #e04f4f;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem  !important;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px !important;
+}
+
+.match-scheduler__notification-btn:hover {
+    background: #b91f1f;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.match-scheduler__notification-btn--success {
+    background-color: #1f8d23 !important; /* Green for success */
+  }
+
+  .match-scheduler__calendar:hover{
+    background: linear-gradient(120deg, #ffdcc2, #ffe4d9); /* Hover row gradient */
+    color: #1b1f3b; /* Maintain dark navy text for readability */
+    transform: translateY(-5px) scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect for text fields */
+.text-field:hover .MuiOutlinedInput-root {
+  border-color: #1976d2 !important; 
+  background-color: #fff5ee; 
+}
+
+@media (max-width: 768px) {
+  .match-scheduler-container{
+    align-items: center;
+    margin-left: -50px;
+  }
+
+  .match-scheduler__calendar{
+    margin-left: -50px;
+  }
+
+  .match-scheduler__notification-btn{
+    margin-left: -50px !important;
+  }
+}

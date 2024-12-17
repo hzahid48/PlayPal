@@ -1,0 +1,52 @@
+/* General Container */
+.pay-container {
+    font-family: "Arial", sans-serif;
+    /* background: linear-gradient(120deg, #1b1f3b, #dd524d); */
+    background-image: url('../../images/pexels-unknown6user-1657332.jpg'); /* Add a sports-related image URL */
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+.pay-content {
+    
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  .pay-content:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+  /* Store Title */
+  .pay-title {
+    margin-bottom: 20px;
+    color: #b91f1f;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5);
+  }
+  .pay-title:hover {
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 69, 0, 1);
+}
+.pay-button{
+  background:rgb(19, 80, 160) !important;
+}
+.pay-button:hover {
+    background: #348638 !important;
+    transform: translateY(-2px) scale(1.1);
+  }
+  .pay-button1:hover {
+    background: #210149;
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  

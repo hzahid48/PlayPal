@@ -1,0 +1,95 @@
+/* General reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%; /* Ensure full width */
+
+  background-color: #1b1f3b !important; /* Deep navy blue for the base */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important; /* Soft shadow for depth */
+  position: relative !important;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease !important;
+}
+
+/* Vibrant hover effect on the whole navbar */
+.navbar:hover {
+  background-color: #b91f1f !important; /* Glowing orange on hover */
+  box-shadow: 0px 0px 30px rgba(255, 69, 0, 1), 0px 0px 60px rgba(255, 69, 0, 0.8) !important; /* Super glowing shadow */
+}
+
+/* Navbar links styling */
+.nav-links button {
+  margin: 0 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff; /* White text by default */
+  background-color: transparent; /* Transparent background for focus on hover */
+  position: relative; /* For hover effects */
+  border: none;
+  padding: 12px 20px; /* Comfortable padding */
+  cursor: pointer; /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover effect on navbar links */
+.nav-links button:hover {
+  color: #ff4500; /* Text turns orange */
+  text-shadow: 0px 0px 10px rgba(255, 69, 0, 0.8), 
+               0px 0px 30px rgba(255, 69, 0, 1), 
+               0px 0px 50px rgba(255, 69, 0, 0.5); /* Glowing effect */
+  transform: scale(1.2) rotate(3deg); /* Huge scaling and slight rotation */
+}
+
+/* Active/Clicked State for Links */
+.nav-links button:active {
+  transform: scale(0.95); /* Shrinks on click for feedback */
+  box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.7); /* Subtle glow when clicked */
+}
+/* Navbar responsiveness */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none; /* Hide links for small screens */
+  }
+
+  .drawer-links {
+    padding: 20px;
+    background-color: #1b1f3b; /* Same as the navbar color */
+  }
+
+  .drawer-links .MuiListItemText-root {
+    text-align: center;
+    color: #ffffff; /* White text in drawer */
+  }
+
+  .drawer-links .MuiListItem-root {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separator between items */
+  }
+
+  .drawer-links .MuiListItem-root:hover {
+    background-color: rgba(255, 69, 0, 0.2); /* Light orange hover */
+  }
+}
+
+/* For medium screens and above */
+@media (min-width: 801px) {
+  .nav-links {
+    display: flex; /* Show links for larger screens */
+  }
+
+  .drawer-links {
+    display: none; /* Hide the drawer */
+  }
+}
+
+

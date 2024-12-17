@@ -1,0 +1,191 @@
+/* General Container */
+.team-management-container {
+    font-family: "Arial", sans-serif;
+    /* background: linear-gradient(120deg, #1b1f3b, #dd524d); */
+    background-image: url('../../images/pexels-unknown6user-1657332.jpg'); /* Add a sports-related image URL */
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+  }
+
+
+  /* Content Layout */
+  .team-management-content {
+    margin-top: 20px;
+    background: #ffffff;
+    color: #1b1f3b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  .team-management-content:hover{
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 69, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.1); /* Elevated glow */
+    color: #1b1f3b; /* Maintain readability */
+  }
+  /* Section Titles */
+  .team-management-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b91f1f;;
+    border-bottom: 2px solid  #b91f1f;;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5); /* Subtle glow */
+  }
+  
+  /* Team Table */
+  .team-table-section {
+    margin-top: 20px;
+  }
+  
+  .team-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .team-table th,
+  .team-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: #1b1f3b;
+  }
+  
+  .team-table th {
+    background: #ff4500;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .team-table tr:nth-child(even) {
+    background: #f7f7f7;
+  }
+  
+  .team-table tr:hover {
+    background: linear-gradient(120deg, #ffdcc2, #ffe4d9);
+    color: #1b1f3b;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+  .team-table th {
+    background: linear-gradient(145deg, #c24242, #2a2f52);
+    color: #ffffff; /* Ensure white text for headers */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  /* Action Buttons */
+  .action-button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  
+  
+  .action-button.edit {
+    background: #ffa500;
+  }
+  
+  .action-button.edit:hover {
+    background: #ff8c00;
+    transform: scale(1.05);
+  }
+  
+  .action-button.remove {
+    /* background: #e04f4f; */
+    background-color: #1976d2; /* Default primary blue */
+    margin-left: 20px;
+  }
+  
+  .action-button.remove:hover {
+    background: #b91f1f;
+    transform: scale(1.05);
+  }
+  
+  .action-button.add {
+    /* background: #e04f4f; */
+    background-color: #1976d2; /* Default primary blue */
+    font-size: 20px;
+  }
+  
+  .action-button.add:hover {
+    background: #b91f1f;
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  /* Add Member Section */
+  .add-member-section {
+    margin-top: 30px;
+  }
+  
+  .add-member-section h3 {
+    text-align: center;
+    color:  #b91f1f;;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.5); /* Subtle glow */
+  }
+  
+  .input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .team-management-content{
+      margin-left: -50px;
+    }
+
+    .action-button.remove{
+      margin-top: 5px;
+    }
+
+    .action-button.edit{
+      width: 85px !important;
+      margin-left: 20px;
+    }
+
+    .team-table{
+      margin-left: -5px;
+    }
+
+  .team-table th,
+  .team-table td {
+   font-size: 12px;
+  }
+  }
